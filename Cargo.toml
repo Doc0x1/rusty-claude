@@ -1,0 +1,19 @@
+[package]
+name = "rusty-claude"
+version = "0.1.0"
+edition = "2021"
+description = "Retry supervisor for the Claude AI command line client"
+license = "MIT"
+repository = "https://github.com/Doc0x1/rusty-claude"
+
+[dependencies]
+clap = { version = "4.5", features = ["derive"] }
+regex = "1.10"
+rand = "0.9.2"
+atty = "0.2"
+
+# The profile that 'dist' will build with
+[profile.dist]
+inherits = "release"
+lto = "thin"
+
