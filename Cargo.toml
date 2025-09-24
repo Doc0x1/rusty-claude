@@ -1,6 +1,6 @@
 [package]
 name = "rusty-claude"
-version = "0.1.1"
+version = "0.2.0"
 edition = "2021"
 description = "Retry supervisor for the Claude AI command line client"
 license = "MIT"
